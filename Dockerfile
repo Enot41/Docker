@@ -4,7 +4,7 @@ ENV TZ=Europe/Moscow
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get install git -y
 RUN apt-get install tomcat9 -y
-RUN apt-get install maven -y 8
+RUN apt-get install maven -y
 RUN apt-get install default-jdk -y
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 RUN cd boxfuse-sample-java-war-hello
