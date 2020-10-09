@@ -14,4 +14,4 @@ mkdir /usr/share/tomcat9/webapps
 RUN cp -r /boxfuse-sample-java-war-hello/target/hello-1.0.war /usr/share/tomcat9/webapps/ROOT.war
 RUN cp -r /usr/share/tomcat9/etc/. /usr/share/tomcat9/conf/
 EXPOSE 8080
-CMD ["/usr/share/tomcat9/bin/catalina.sh","run","-config /usr/share/tomcat9/etc/server.xml"]
+CMD ["/usr/share/tomcat9/bin/catalina.sh","run"]
